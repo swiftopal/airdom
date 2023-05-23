@@ -5,7 +5,7 @@ const rateLimit = require('express-rate-limit');
 const app = express();
 const port = 3000;
 
-app.use(express.static('public'));
+app.use(express.static('src'));
 
 // Rate limit middleware to prevent abuse
 const limiter = rateLimit({
